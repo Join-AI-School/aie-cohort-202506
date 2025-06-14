@@ -1,0 +1,18 @@
+[project]
+name = "financial-agent"
+version = "0.1.0"
+description = "financial-agent project"
+dependencies = [
+    "langchain>=0.3.20",
+    "langchain-community>=0.3.19",
+    "langchain-core>=0.3.45",
+    "langchain-groq>=0.2.5",
+    "langgraph>=0.3.11",
+    "python-dotenv>=1.0.0",
+    "groq>=0.5.0",
+    "langchain-ollama>=0.3.3",
+    "ipykernel>=6.29.5",
+    "google-cloud-bigquery>=3.34.0",
+    "langchain-openai>=0.3.22",
+    "sqlalchemy-bigquery>=1.14.1",
+]
