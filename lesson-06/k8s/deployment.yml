@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: financial-agent
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: financial-agent
+  template:
+    metadata:
+      labels:
+        app: financial-agent
+    spec:
+      containers:
+      - name: financial-agent
+        image: us-central1-docker.pkg.dev/financial-agent-202506/financial-agent-repo/financial-agent-image
+        ports:
+        - containerPort: 8000
